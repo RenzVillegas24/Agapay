@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerVertical="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="850dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/left_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/right_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/top_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent=".15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bottom_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent=".85" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"
+                    app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
+                    app:layout_constraintRight_toRightOf="@+id/right_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/top_guideline">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start your Registration Here!"
+                        android:fontFamily="sans-serif-black"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/menu"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="SIM Card Provider">
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        app:shapeAppearanceOverlay="@style/TextBox.Rounded">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtBxUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:ems="10"
+                            android:hint="Username/Number"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        app:passwordToggleEnabled="true"
+                        app:shapeAppearanceOverlay="@style/TextBox.Rounded">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtBxPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Password"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnForgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot password?"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:textAlignment="center" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Login" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Register instead" />
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

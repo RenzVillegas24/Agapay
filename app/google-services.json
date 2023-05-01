@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "755831288105",
+    "firebase_url": "https://agapaydata-default-rtdb.firebaseio.com",
+    "project_id": "agapaydata",
+    "storage_bucket": "agapaydata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755831288105:android:3cbada51197c01f6f04738",
+        "android_client_info": {
+          "package_name": "com.agapay.auth.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755831288105-jgs5oiumtam5nqahpf40v9jola9kktpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agapay.auth.app",
+            "certificate_hash": "acc514ed1dfc414e5f43757d95cafc68c455034f"
+          }
+        },
+        {
+          "client_id": "755831288105-6t4rltkd2a6lqefr2qlitin2na1fcceh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdV89-J4ZDArOTVaX6FH1Dy44WPIcDxFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755831288105-6t4rltkd2a6lqefr2qlitin2na1fcceh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

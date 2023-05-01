@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navi"
+    app:startDestination="@id/login_screen">
+    <fragment
+        android:id="@+id/login_screen"
+        android:name="com.agapay.app.login_screen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_login_screen_to_register_number"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:destination="@id/register_number" />
+        <action
+            android:id="@+id/action_login_screen_to_register_otp"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:destination="@id/register_otp" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_screen"
+        android:name="com.agapay.app.register_screen"
+        android:label="fragment_register_screen"
+        tools:layout="@layout/fragment_register_screen" >
+        <action
+            android:id="@+id/action_register_screen_to_main_menu"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popUpTo="@+id/login_screen"
+            app:destination="@id/main_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_number"
+        android:name="com.agapay.app.register_number"
+        android:label="fragment_register_number"
+        tools:layout="@layout/fragment_register_number" >
+        <action
+            android:id="@+id/action_register_number_to_register_otp"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:destination="@id/register_otp"
+            app:popUpTo="@+id/login_screen"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/register_otp"
+        android:name="com.agapay.app.register_otp"
+        android:label="fragment_register_otp"
+        tools:layout="@layout/fragment_register_otp" >
+        <action
+            android:id="@+id/action_register_otp_to_register_screen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:destination="@id/register_screen"
+            app:popUpTo="@+id/login_screen"
+            />
+        <action
+            android:id="@+id/action_register_otp_to_main_menu"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popUpTo="@+id/login_screen"
+            app:destination="@id/main_menu" />
+        <action
+            android:id="@+id/action_register_otp_to_register_number"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popUpTo="@+id/login_screen"
+            app:destination="@id/register_number" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_menu"
+        android:name="com.agapay.app.main_menu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_main_menu_to_register_screen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:destination="@id/register_screen" />
+    </fragment>
+
+</navigation>

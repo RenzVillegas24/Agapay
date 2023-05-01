@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="bg_trans">#BF201A1B</color>
+    <color name="seed">#FB6F92</color>
+    <color name="md_theme_dark_primary">#FFB1C0</color>
+    <color name="md_theme_dark_onPrimary">#660028</color>
+    <color name="md_theme_dark_primaryContainer">#89153D</color>
+    <color name="md_theme_dark_onPrimaryContainer">#FFD9DF</color>
+    <color name="md_theme_dark_secondary">#E4BDC3</color>
+    <color name="md_theme_dark_onSecondary">#43292E</color>
+    <color name="md_theme_dark_secondaryContainer">#5C3F44</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FFD9DF</color>
+    <color name="md_theme_dark_tertiary">#ECBE90</color>
+    <color name="md_theme_dark_onTertiary">#462A08</color>
+    <color name="md_theme_dark_tertiaryContainer">#5F401D</color>
+    <color name="md_theme_dark_onTertiaryContainer">#FFDCBC</color>
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+    <color name="md_theme_dark_background">#201A1B</color>
+    <color name="md_theme_dark_onBackground">#ECE0E0</color>
+    <color name="md_theme_dark_surface">#201A1B</color>
+    <color name="md_theme_dark_onSurface">#ECE0E0</color>
+    <color name="md_theme_dark_surfaceVariant">#524345</color>
+    <color name="md_theme_dark_onSurfaceVariant">#D6C2C4</color>
+    <color name="md_theme_dark_outline">#9F8C8F</color>
+    <color name="md_theme_dark_inverseOnSurface">#201A1B</color>
+    <color name="md_theme_dark_inverseSurface">#ECE0E0</color>
+    <color name="md_theme_dark_inversePrimary">#A93054</color>
+    <color name="md_theme_dark_shadow">#000000</color>
+    <color name="md_theme_dark_surfaceTint">#FFB1C0</color>
+    <color name="md_theme_dark_outlineVariant">#524345</color>
+    <color name="md_theme_dark_scrim">#000000</color>
+</resources>
