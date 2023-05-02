@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "755831288105-db09ja7nqhep5ihn3tlv3hc6j65td4ii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agapay.auth.app",
+            "certificate_hash": "0b31fa828ad64fb5e6bfeecf02ba06be602906a4"
+          }
+        },
+        {
           "client_id": "755831288105-jgs5oiumtam5nqahpf40v9jola9kktpc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
